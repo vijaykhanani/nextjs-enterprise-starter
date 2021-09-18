@@ -21,7 +21,7 @@ const StyledComponent = (): JSX.Element => (
 );
 const Tailwind = (): JSX.Element => (
   <>
-    <h1 className='p-20 text-xl text-white bg-black'>Tailwind Demo</h1>
+    <h1 className='pt-[80px] text-xl text-white bg-black'>Tailwind Demo</h1>
   </>
 );
 const EmotionCssObject = (): JSX.Element => (
