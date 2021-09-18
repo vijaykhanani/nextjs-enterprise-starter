@@ -1,0 +1,31 @@
+/**
+ *
+ * {{ properCase name }}
+ *
+ */
+
+{{#if memo}}
+import { FC, memo } from 'react';
+{{else}}
+import { FC } from 'react';
+{{/if}}
+export interface {{pascalCase name}}Props {}
+
+const {{pascalCase name}}: FC<{{pascalCase name}}Props> = (props) => {
+  const {} = props;
+  return (
+    {{#if wantCss}}
+    <div className='{{pascalCase name}}' data-testid='{{pascalCase name}}'>
+    {{else}}
+    <div data-testid='{{pascalCase name}}'>
+    {{/if}}
+      <span>{{pascalCase name}} Component</span>
+    </div>
+  );
+};
+
+{{#if memo}}
+export default memo({{pascalCase name}});
+{{else}}
+export default {{pascalCase name}};
+{{/if}}

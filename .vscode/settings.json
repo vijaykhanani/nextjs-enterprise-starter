@@ -1,0 +1,30 @@
+{
+  "feature.confirmDelete": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.format": true
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.autoSave": "off", // let this be off
+  "html.format.wrapAttributes": "aligned-multiple",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "scss.validate": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "html", "typescriptreact"],
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "plaintext": "javascript",
+    "typescriptreact": "javascript"
+  },
+  "eslint.alwaysShowStatus": true,
+  "css.customData": [".vscode/css_custom_data.json"]
+}

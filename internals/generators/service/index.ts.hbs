@@ -1,0 +1,17 @@
+import { Logger } from '@utils/logger';
+import { ApiCaller } from '../apiCaller';
+
+export class {{pascalCase name}}Service {
+  private static API_URL = ``;
+
+  static getAll = async (): Promise<unknown> => {
+     try {
+      const res = await ApiCaller.httpGet(`${({{pascalCase name}}Service).API_URL}/`);
+      Logger.debug('{{pascalCase name}}Service.getAll() ', res);
+      return res;
+    } catch (err) {
+      Logger.error('{{pascalCase name}}Service.getAll() ', err);
+      throw err;
+    }
+  };
+}

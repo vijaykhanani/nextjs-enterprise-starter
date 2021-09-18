@@ -1,0 +1,22 @@
+import { makeObservable, observable,action } from 'mobx';
+import { enableStaticRendering } from 'mobx-react';
+
+enableStaticRendering(typeof window === 'undefined');
+
+class {{pascalCase name}}Store {
+  _loading: boolean;
+
+  constructor() {
+    this._loading = false;
+    makeObservable(this, {
+      _loading: observable,
+      setLoading :action
+    });
+  }
+
+   setLoading(state: boolean): void {
+    this._loading = state;
+  }
+}
+
+export default {{pascalCase name}}Store;

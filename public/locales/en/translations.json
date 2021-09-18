@@ -1,0 +1,21 @@
+{
+  "welcome": {
+    "title": "Willkommen bei {{framework}}"
+  },
+  "title": "Welcome to react using react-i18next",
+  "description": {
+    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+    "part2": "Switch language between english and german using buttons above."
+  },
+  "authentication": {
+    "common": {},
+    "login": {
+      "signInHeading": "Sign in to your account",
+      "email": "Email Address",
+      "password": "Password",
+      "authentication": "Authentication",
+      "signin": "Sign in",
+      "rememberMe": "Remember me"
+    }
+  }
+}
